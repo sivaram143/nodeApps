@@ -1,0 +1,13 @@
+{
+  "name": "MochaTest",
+  "version": "0.0.1",
+  "dependencies": {
+    "body-parser": "^1.13.2",
+    "express": "^4.13.1"
+  },
+  "devDependencies": {
+    "mocha": "^2.4.5",
+    "should": "^8.3.2",
+    "supertest": "^1.2.0"
+  }
+}
