@@ -1,0 +1,19 @@
+{
+  "name": "node-apps",
+  "version": "1.0.0",
+  "description": "# Node.js",
+  "main": "event-emiiter.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sivaram143/nodeApps.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sivaram143/nodeApps/issues"
+  },
+  "homepage": "https://github.com/sivaram143/nodeApps#readme"
+}
