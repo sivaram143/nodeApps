@@ -1,0 +1,23 @@
+{
+  "replaceConsole": true,      
+                             
+  "appenders": [{
+    "type": "console"     
+                        
+  }, {
+    "type": "logLevelFilter",
+    "level": "ERROR",         
+
+    "appender": {             
+      "type": "smtp",
+      "recipients": "sivaram.nyayapati@gmail.com",
+      "sender": "sender@gmail.com",
+      "sendInterval": 60,     
+      "transport": "SMTP",
+      "SMTP": {
+        "host": "localhost",  
+        "port": 25
+      }
+    }
+  }]
+}
