@@ -1,4 +1,7 @@
 /*
+  There are mainly two Scopes
+      1. Global Scope (window)
+      2. Local Scope
   Declaring and assign global variable
   scope of this variable as window object
   use it as anywhere in program

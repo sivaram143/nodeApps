@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/sivaram143/nodeApps/issues"
   },
-  "homepage": "https://github.com/sivaram143/nodeApps#readme"
+  "homepage": "https://github.com/sivaram143/nodeApps#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0"
+  }
 }

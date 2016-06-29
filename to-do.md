@@ -9,10 +9,10 @@
 - Streams
 - File System
 - Error Handling
+- Express Framework + Authentication
 - REST API
 - Modules
 - Database CRUD : MongoDB, MySQL, PostgreSQL
-- Express Framework
 - Debugging
 - Socket.io
 - Cluster
