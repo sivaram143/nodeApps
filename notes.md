@@ -8,9 +8,29 @@
      * `Fulfilled` - the asynchronous operation has completed, and the promise has a value.
      * `Rejected` - the asynchronous operation failed, and the promise will never be fulfilled. In the rejected state, a promise has a reason that indicates why the operation failed.
 
+* Blocking : waiting for something to complete and not being able to do other things (waiting in line)
+* Non-Blocking : waiting for something to complete and being able to do other things while you wait (waiting via callout system)
+
+* Asynchronous : able to break off from the main flow of doing something (fork in a river)
+* Synchronous : stays with the main flow (curve in a river)
+
+* Parallel : multiple things happening at the same time (multi-tasking)
+* Serial : things happen in order, one after the other (single-tasking)
+
+* API(Application Programming Interface)
+    * Allows software programs to interact with each other
+* SDK (Software Development Kit)
+    * A set of tools that can be used to develop software applications targeting a specific platform.
+    * All SDKs are/contain APIs but not all APIs are SDKs
+
 * console
     * console.log(document.body); //  prints the element in an HTML-like tree
     * console.dir(document.body); //  prints the element in a JSON-like tree
+    * console.error("Error"); //  prints like error message
+
+* JSON : Java Script Object Notation
+    * JSON.stringify() //converts a JavaScript value to a JSON string
+    * JSON.parse() // parses a string as JSON
 
 *  The Express Generator lets you create complex applications quickly.
 ```
@@ -23,8 +43,7 @@ Ref:https://github.com/petecoop/generator-express
 ``` 
 
 * HTTP Methods:
-    - GET:   This is used to provide a read only access to a resource.
-    - PUT - This is used to create a new resource.
-    - DELETE - This is used to remove a resource.
-
-    - POST - This is used to update a existing resource or create a new resource.
+    - GET     : This is used to provide a read only access to a resource.
+    - PUT     : This is used to create a new resource.
+    - DELETE  : This is used to remove a resource.
+    - POST    : This is used to update a existing resource or create a new resource.
