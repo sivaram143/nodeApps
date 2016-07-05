@@ -1,0 +1,14 @@
+[
+  {
+      "name": "Kiran",
+      "age": 28,
+      "desg":"SE",
+      "skills": ["AWS", "Java"]
+  },
+  {
+      "name": "Sai",
+      "age": 26,
+      "desg":"SE",
+      "skills": ["C", "Java"]
+  }
+]

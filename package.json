@@ -17,7 +17,10 @@
   },
   "homepage": "https://github.com/sivaram143/nodeApps#readme",
   "dependencies": {
+    "JSONStream": "^1.1.3",
+    "aws-sdk": "^2.4.4",
     "body-parser": "^1.15.2",
+    "dynamo-streams": "^1.1.6",
     "express": "^4.14.0",
     "nodejs-websocket": "^1.6.0"
   }
