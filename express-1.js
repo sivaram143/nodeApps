@@ -2,7 +2,7 @@
  * Express is a minimal and flexible Node.js web application framework
  * Install: $ npm install express --save
  Testing:
-   1. $ node welcome-express-server.js
+   1. $ node express-1.js
    2. Open browser and navigate URL 
       http://localhost:5000
            (or)
