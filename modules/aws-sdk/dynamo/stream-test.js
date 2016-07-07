@@ -1,6 +1,12 @@
 /* Usage: node stream-test.js */
 // TBD
 
+/*
+Readable streams : createScanStream, createQueryStream, createTableStream
+Writable streams : createPutStream, createDeleteStream, createScanSyncStream, createQuerySyncStream
+Ref: https://github.com/jed/dynamo-streams
+*/
+
 /* importing modules */
 var AWS = require("aws-sdk"),
     dynamostreams = require("dynamo-streams"),
@@ -25,3 +31,4 @@ var jsonfile = "test.json";
 fs.createReadStream(jsonfile, {encoding: "utf8"})
 .pipe(JSONStream.parse("*"))
 .pipe(dbStreams.createPutStream({TableName: "test"}));
+
