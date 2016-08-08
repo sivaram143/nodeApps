@@ -1,0 +1,19 @@
+{
+  "name": "async-demo",
+  "version": "1.0.0",
+  "description": "Simple app to demonstrate async module",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "async",
+    "mysql"
+  ],
+  "author": "Sivaram",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.0.0-rc.6",
+    "mysql": "^2.11.1"
+  }
+}
