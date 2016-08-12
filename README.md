@@ -15,4 +15,6 @@
 
 ### References
 - https://github.com/sindresorhus/awesome-nodejs
+- https://github.com/sergtitov/NodeJS-Learning
+- https://github.com/GoogleCloudPlatform/nodejs-getting-started
 

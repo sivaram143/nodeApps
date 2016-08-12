@@ -61,7 +61,19 @@ Ref:https://github.com/petecoop/generator-express
 * [mongoose](http://mongoosejs.com/docs/models.html) : Mongoose provides a straight-forward, schema-based solution to model your application data.  
 
 * Screen Sizes
-    a) Extra small devices Phones (<768px) / .col-xs
-    b) Small devices Tablets (≥768px) / .col-sm
-    c) Medium devices Desktops (≥992px) / .col-md
-    d) Large devices Desktops (≥1200px) / .col-lg
+   * Extra small devices Phones (<768px) / .col-xs
+   * Small devices Tablets (≥768px) / .col-sm
+   *  Medium devices Desktops (≥992px) / .col-md
+   *  Large devices Desktops (≥1200px) / .col-lg
+
+* WebService : A web service is a collection of open protocols and standards used for exchanging data between applications or systems.
+    * REST: Representational State Transfer.
+    * REST Methods: GET, POST, DELETE, PUT.
+    * REST Clients / Tools :  Advanced Rest Client, Postman-Rest Client, Curl in Linux
+    * Ref
+        - http://www.guru99.com/testing-rest-api-manually.html#1
+        - http://rest.elkstein.org/2008/02/rest-design-guidelines.html
+
+* Library: A library is a collection of functions / objects that serves one particular purpose. you could use a library in a variety of projects.
+
+* Framework: A framework is a collection of patterns and libraries to help with building an application.
