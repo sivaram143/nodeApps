@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+      <meta charset="utf-8">
+      <title>International Mobile Number Validation</title>
+      <link rel="stylesheet" href="../node_modules/intl-tel-input/build/css/intlTelInput.css">
+  </head>
+
+  <body>
+    <input type="text" id="phone">
+    <input type="button" id="btn_show" value="send" onclick="send()">
+    
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="../node_modules/intl-tel-input/build/js/intlTelInput.js"></script>
+    <script type="text/javascript">
+      var telInput = $("#phone");
+      
+      /* iniitialize the plugin */
+      $("#phone").intlTelInput({
+          utilsScript: "../node_modules/intl-tel-input/build/js/utils.js"
+        });
+      
+      /* set the default country code as india */
+      $("#phone").intlTelInput("setNumber", "+91");
+
+      /* method to support validations and 
+         send dummy post request 
+      */
+      function send(){
+        var time=new Date().getTime();
+        
+        // to get the value of input
+        ph = telInput.val();
+        
+        // validate of mobile no
+        if(!ph){
+          alert("please enter the mobile number");
+          return false;
+        }
+        
+        if ($.trim(telInput.val())) {
+          if (telInput.intlTelInput("isValidNumber")) {
+            alert("valid");
+          } else {
+            alert("Invalid");
+            return false;
+          }
+        }
+
+  			// creating new object
+        arg = new Object();
+				arg.url = "test.cp";
+				arg.mobileNo = ph;
+				arg.time = time;
+
+        // ajax post request
+  	  	var ajax_param = {
+  	  		type: 	'POST',
+  	  		async:	false,
+  	  		url: 	'/'+arg.url,
+  	  		data: 	arg,
+  	  		dataType: 'xml',
+  			  cache: false,
+  	  		success: function(data,textStatus,xhr){
+  					console.log("success called");
+  	  		},
+  	  		error: function(xhr, ajaxOptions, thrownError){
+  	  			console.log("Error in loading the settings")
+  	  		}
+  	  	};
+  		
+  		  $.ajax(ajax_param);
+  		
+  	}
+      /* Ref:
+          https://github.com/jackocnr/intl-tel-input
+          https://www.npmjs.com/package/intl-tel-input
+      */
+    </script> 
+  </body>
+</html>
