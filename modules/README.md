@@ -7,6 +7,6 @@
 - [jszip](http://stuk.github.io/jszip/)
 - [js-mobile-console](https://github.com/B1naryStudio/js-mobile-console)
 - [request](http://blog.modulus.io/node.js-tutorial-how-to-use-request-module)
-
+- builtin-modules [https://www.npmjs.com/package/builtin-modules]
 
 process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0'; // to allow https
