@@ -1,4 +1,4 @@
-/* 
+/*
   Access different urls using express routes
   http://localhost:5000 : redirects to the index.html page in /public
 */
@@ -30,9 +30,9 @@ app.get("/users/:id", function (req, res) {
 	res.send("You asked for user id'" + id + "' and passed the name = '" + name + "'");
 });
 
-/* 
+/*
   Serving Static files
-  To access static files from public directory 
+  To access static files from public directory
   Access with : http://localhost:5000/img1.png
 */
 app.use(express.static(__dirname + '/public'));
@@ -69,3 +69,23 @@ app.post('/file-upload', function (req, res) {
 app.listen(5000, function () {
   console.log('app listening on port 5000!');
 });
+
+
+
+/* connect-midleware for generic use
+
+app.configure(function() {
+    app.set('port', process.env.PORT || 3000);
+    app.set('views', __dirname + '/views');
+    app.use(express.favicon());
+    app.use(express.logger('dev'));
+    app.use(express.bodyParser({ keepExtensions: true, uploadDir: __dirname + '/public/uploads' }));
+    app.use(express.methodOverride());
+    app.use(app.router);
+    app.use(express.static(path.join(__dirname, '/public')));
+    app.use(express.static(__dirname + '/static'));
+    app.use(express.errorHandler());
+});
+
+
+*/
