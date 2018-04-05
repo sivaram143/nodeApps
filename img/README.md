@@ -1,6 +1,7 @@
 ### Node.js Images Page
 
 - NodeJS Architecture
+
 ![Node.js](node.jpg)
 
 - Apache vs Node
@@ -22,6 +23,7 @@
 ![routes](routes.png)
 
 - node-cassandra
+
 ![node-cassandra](node-cassandra.jpg)
 
 - Sample node Proj Structure
@@ -33,6 +35,7 @@
 | 1 | 2 |
 
 - StrongLoop
+
 ![stongloop](strongloop-overview.jpg)
 
 - AWS + Nodejs
