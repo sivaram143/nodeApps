@@ -1,6 +1,6 @@
 ### To Start the app
 
-- `npm install nodeemailer`
+- `npm install nodemailer`
 - `node email.js <user> <pwd> <recipient>`
 
 ### Note
