@@ -1,5 +1,5 @@
 // require nodeemailer module
-// Install: $ npm install nodeemailer
+// Install: $ npm install nodemailer
 // Note: Before sending your email using gmail you have to allow non secure apps to access gmail
 // https://myaccount.google.com/lesssecureapps
 var mailer = require("nodemailer");
@@ -20,7 +20,7 @@ if(!user || !pwd || !recipient){
 }
 
 // Use smtp protocol to send Email
-var smtpTransport = mailer.createTransport("SMTP", {
+var smtpTransport = mailer.createTransport({
     service : "Gmail",
     auth    :{
         user: user,
@@ -32,15 +32,15 @@ var mail ={
     from: user,
     to: recipient,
     subject: "Send Email Using Node.js",
-    text: "Node.js New world for me",
-    html: "<b>Node.js New world for me</b>"
+    text: "Welcome to Node.js",
+    html: "<i>Welcome to Node.js</i>"
 }
 
 smtpTransport.sendMail(mail, function(error, response){
     if(error){
         console.log(error);
     }else{
-        console.log("Message sent: " + response.message);
+        console.log("Email has been sent successfully");
     }
-    smtpTransport.close();
+    smtpTransose();
 });
