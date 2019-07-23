@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arrow Functions</title>
+    <script>
+
+            // Arrow funcitons
+            // 1. Concise Syntax
+            // 2. Better "this" keyword
+           
+            let normalFunc = function test(a, b){
+                return a+b;
+            }
+
+            let arrowFunc = (a,b) => a+b;
+            
+
+            function Test(){
+                this.i = 0;
+                this.k = 0;
+
+                console.log(this);
+                
+                // without bind
+                setTimeout(function(){
+                    this.i++;
+                    console.log("i: "+this.i, this);
+                }, 1000);
+
+
+                setTimeout(function(){
+                    this.i++;
+                    console.log("i: "+this.i, this);
+                }.bind(this), 1000);
+
+
+                setTimeout(() => {
+                    this.k++;
+                    console.log("k: "+this.k, this);
+                }, 1000);
+            }
+
+            const n = new Test();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

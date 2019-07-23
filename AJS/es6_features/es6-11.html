@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Promise</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</head>
+<body>
+        <div class="container">
+                <h2>My Repos</h2>
+                <div class="card">
+                  <div class="card-body" id="getResult1"></div>
+                </div>
+        </div>
+        <script>
+                // ES6 Promises
+                // 1. Better Error Handling
+                // 2. More Readable Code
+                
+                function performGetRequest() {
+                    var resultElement = document.getElementById('getResult1');
+                    resultElement.innerHTML = '';
+
+                    let myRepos = [];
+                    axios.get('https://api.github.com/users/sivaram143')
+                        .then(function (response) {
+                            console.log("Response: ", response.data.repos_url);
+                            return axios.get(response.data.repos_url);
+                        })
+                        .then((response) =>{
+                            console.log("Response-2:"+ JSON.stringify(response.data));
+                            response.data.forEach(data => {
+                                myRepos.push(data.html_url); 
+                               
+                            });
+                            resultElement.innerHTML = generateSuccessHTMLOutput(myRepos);
+                        })
+                        
+                        .catch( function (error) {
+                            console.log(error);
+                            resultElement.innerHTML = generateErrorHTMLOutput(error);
+                            
+                        })
+                }
+                
+                 // Success function
+                function generateSuccessHTMLOutput(response) {
+                    return  '<li>' + JSON.stringify(response) + '</li>' ;
+                }
+        
+        
+                // Error function
+                function generateErrorHTMLOutput(error) {
+                    return  '<h4>Result</h4>' + 
+                            '<pre>' + error + '</pre>';
+                }
+                
+                performGetRequest();
+                
+            </script>
+    
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Custom Promise</title>
+    <script>
+        function asyncFunc(){
+            return new Promise((resolve, reject) => {
+                // if success call "resolve" with success value
+                // if failure call "reject" with failure value
+                setTimeout(() =>{
+                    const test = Math.random();
+                    if(test < 0.5){
+                        resolve(test);
+                    }
+                    else{
+                        reject(test);
+                    }
+                })
+            });
+        }
+
+        asyncFunc().
+            then((response) =>{
+                console.log("Success-1: ", response);
+                return asyncFunc();
+            })
+            .then((response) => {
+                console.log("Success-2: ", response);
+            })
+            .catch((error) => {
+                console.error("Failure: ", error);
+            });
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

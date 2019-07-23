@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Destructuring</title>
+
+    <script>
+        // Destructuring
+
+        // Array
+        let x = [1, 2, 3]
+
+        /*
+        let a = x[0]
+        let b = x [1]
+        let c = x[2] */
+
+        let [a, b, c] = x;
+
+        console.log("a: " + a);
+        console.log("b: " + b);
+        console.log("c: " + c);
+
+        // Objects
+        let k = { p: 100, q: 20 }
+
+        // Note: use same key names
+        let { p, q } = k;
+
+        console.log("p: " + p);
+        console.log("q: " + q);
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
