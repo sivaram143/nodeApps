@@ -21,15 +21,15 @@
     "archiver": "^1.0.0",
     "async": "^2.0.0",
     "aws-sdk": "^2.4.4",
-    "body-parser": "^1.18.2",
+    "body-parser": "^1.19.0",
     "builtin-modules": "^2.0.0",
     "compression": "^1.7.2",
     "connect-redis": "^3.1.0",
     "dynamo-streams": "^1.1.6",
-    "express": "^4.16.2",
+    "express": "^4.17.1",
     "js-mobile-console": "^0.3.1",
     "nodejs-websocket": "^1.6.0",
-    "nodemailer": "^2.5.0",
+    "nodemailer": "^6.3.0",
     "request": "^2.73.0"
   }
 }
