@@ -16,6 +16,12 @@ app.get('/', function (req, res) {
   res.send('Welcome to Express');
 });
 
+
+app.get('/hello', function (req, res) {
+  res.send("hello Express");
+});
+
+
 app.listen(5000, function () {
   console.log('app listening on port 5000!');
 });

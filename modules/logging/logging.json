@@ -1,4 +1,10 @@
 {
+  appenders: { cheese: { type: 'file', filename: 'error.log' } },
+  categories: { default: { appenders: ['cheese'], level: 'error' } }
+};
+
+
+{
   "replaceConsole": true,      
                              
   "appenders": [{

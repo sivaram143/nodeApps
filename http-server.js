@@ -14,6 +14,6 @@ var server = http.createServer(function(req, res){
 	res.end("Welcome to Node");
 });
 
-server.listen(8080);
-console.log("Server Lisenting to Port 8080");
+server.listen(4000);
+console.log("Server Lisenting to Port 4000");
 

@@ -4,10 +4,10 @@ module.exports = {
         return first+second;
     },
     subMethod: function(first, second){
-        return first+second;
+        return first - second;
     },
     mulMethod: function(first, second){
-        return first+second;
+        return first * second;
     }
 }
 
