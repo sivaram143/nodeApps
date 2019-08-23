@@ -42,5 +42,5 @@ smtpTransport.sendMail(mail, function(error, response){
     }else{
         console.log("Email has been sent successfully");
     }
-    smtpTransose();
+    smtpTransport();
 });
