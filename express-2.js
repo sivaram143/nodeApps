@@ -23,10 +23,12 @@ app.get('/users', function (req, res) {
 });
 
 
+
+
 /* Access with : http://localhost:5000/users/1234?name="sivaram" */
-app.get("/users/:id", function (req, res) {
+app.get("/users/:id/:name", function (req, res) {
 	var id = req.params.id;
-	var name = req.query.name;
+  var name = req.params.name;
 	res.send("You asked for user id'" + id + "' and passed the name = '" + name + "'");
 });
 

@@ -9,3 +9,4 @@
 ### References
 
 - https://github.com/deerawan/node-test-examples
+- https://scotch.io/tutorials/test-a-node-restful-api-with-mocha-and-chai
